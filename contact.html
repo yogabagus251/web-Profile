@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Contact Us</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.jpg"></a>
+            
+            <div class="nav-link" id="navlink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="profile.html">Profile</a> </li>
+                <li><a href="contact.html">contact</a> </li>  
+                
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       
+        <h1>Contact Us</h1>
+        
+
+        </section>
+        <!----contact-->
+        
+        <section class="location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31915.15104480947!2d101.06378841883273!3d0.8357433723006534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d4ec7268e2b4a1%3A0x73bb18b0b34b685b!2sKijang%20Jaya%2C%20Tapung%20Hilir%2C%20Kabupaten%20Kampar%2C%20Riau!5e0!3m2!1sid!2sid!4v1641559918562!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+            
+        </section>
+        <section class="contact-us">
+          <div class="row">
+           <div class="contact-col">
+           <div>
+               <i class="fa fa-home" ></i>
+               <span>
+                   <h5>Desa Kijang Jaya,Tapung Hilir  </h5>
+                   <p>kampar,pekanbaru,INA</p>
+               </span>
+           </div>
+               <div>
+                   <i class="fa fa-phone" ></i>
+               <span>
+                   <h5>+62 82284376611</h5>
+                   <p>monday to saturday,10AM to 4PM</p>
+               </span>
+               </div>
+               <div>
+                   <i class="fa fa-envelope-o" ></i>
+               <span>
+                   <h5>bagusyoga442@gmail.com</h5>
+                   <p>Email us your query</p>
+               </span>
+               </div>
+              </div>
+            <div class="contact-col">
+           <form action="form-handler.php" method="post">
+               <input type="text" name="name" placeholder="Enter your name" required>
+               <input type="email" name="email" placeholder="Enter Email Addres " required>
+               <input type="text" name="subject" placeholder="Enter your subject " required>
+               <textarea  rows="8"  name="message" placeholder="message"></textarea>
+               <button type="submit" class="hero-btn red-btn">Send Message</button>
+           </form>
+            </div>
+              </div>
+        </section>
+        
+      
+       <!----footer---->
+       <section class="footer">
+           <h4>About Us</h4>
+           <p>Info  terbagus Hanya di <a href="https://bagusinfo.com/">bagusinfo.com</a></p>
+           <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100014053425188" target="_blank"><i class="fa fa-facebook" ></i></a>
+                <a href="https://www.instagram.com/bagus_pratama152/" target="_blank"><i class="fa fa-instagram" ></i></a>
+                <a href="mailto:bagus442@gmail.com" target="_blank"><i class="fa fa-at" ></i></a>
+                <a href="https://www.whatsapp.com/send?text=Hello&phone=+6282284376611" target="_blank"><i class="fa fa-whatsapp" ></i></a>
+           </div>
+           <p>Made With <i class="fa fa-heart-o" ></i>by Muhammad Yoga Bagus Pratama</p>
+        
+       <!-----JavaScript menu mobile----->
+          <script> 
+        var navlink = document.getElementById("navlink");
+            function showMenu(){
+                navlink.style.right = "0";
+            }function hideMenu(){
+                navlink.style.right = "-200px";
+            }
+              
+        </script>
+    </body>
+</html>
